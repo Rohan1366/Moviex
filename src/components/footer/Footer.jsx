@@ -4,6 +4,8 @@ import {
     FaInstagram,
     FaTwitter,
     FaLinkedin,
+    FaGithub,
+    FaWhatsapp,
 } from "react-icons/fa";
 
 import ContentWrapper from "../contentWrapper/ContentWrapper";
@@ -22,28 +24,30 @@ const Footer = () => {
                     <li className="menuItem">FAQ</li>
                 </ul>
                 <div className="infoText">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                    Duis aute irure dolor in reprehenderit in voluptate velit
-                    esse cillum dolore eu fugiat nulla pariatur.
+                A film, also called a movie or a motion picture, is a series of still photographs on 
+                film projected onto a screen using light in rapid succession. The optical phenomenon
+                 known as persistence of vision gives the illusion of actual, smooth, and continuous movement.
                 </div>
                 <div className="socialIcons">
-                    <span className="icon">
-                        <FaFacebookF />
-                    </span>
-                    <span className="icon">
+                <a className="icon" href="https://github.com/Rohan1366/"  target="_blank">
+                        <FaGithub />
+                    </a>
+                    
+                    <a className="icon" href="https://www.instagram.com/_rohan_ghadge_/"  target="_blank">
                         <FaInstagram />
-                    </span>
-                    <span className="icon">
-                        <FaTwitter />
-                    </span>
-                    <span className="icon">
+                    </a>
+                        
+                    
+                    <a className="icon" href="https://www.linkedin.com/in/rohan-ghadge-73963923b/"  target="_blank">
                         <FaLinkedin />
-                    </span>
+                    </a>
+                    <a className="icon" href="https://wa.me/917620706408"  target="_blank">
+                        <FaWhatsapp />
+                    </a>
                 </div>
+                <h3 className='text-center' style={{marginTop:"30px"}}>All Right Reserved &copy; Rohan Ghadge</h3>
             </ContentWrapper>
+            
         </footer>
     );
 };
